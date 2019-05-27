@@ -72,7 +72,7 @@ def main(args):
     idx_set.add(idx)
   input_paths.sort(key=lambda x: x[1])
   assert len(idx_set) == len(input_paths)
-  assert min(idx_set) == 0 and max(idx_set) == len(idx_set) - 1
+  # assert min(idx_set) == 0 and max(idx_set) == len(idx_set) - 1
   if args.max_images is not None:
     input_paths = input_paths[:args.max_images]
   print(input_paths[0])
