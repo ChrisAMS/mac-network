@@ -427,7 +427,7 @@ def parseArgs():
 
 def configCLEVR():
     config.dataPath = "{dataBasedir}/CLEVR_v1/data".format(dataBasedir = config.dataBasedir)
-    config.datasetFilename = "CLEVR_{tier}_questions.json"
+    config.datasetFilename = "CLEVR_{tier}_questions_sample_mac.json"
     config.wordVectorsFile = "./CLEVR_v1/data/glove/glove.6B.{dim}d.txt".format(dim = config.wrdEmbDim) #
 
     config.imageDims = [14, 14, 1024]
@@ -436,8 +436,8 @@ def configCLEVR():
 
 def configNLVR():
     config.dataPath = "{dataBasedir}/nlvr".format(dataBasedir = config.dataBasedir)
-    config.datasetFilename = "{tier}.json"
-    config.imagesFilename = "{{tier}}_{featureType}.h5".format(featureType = config.featureType)
+    config.datasetFilename = "CLEVR_{tier}_questions_sample.json"
+    config.imagesFilename = "{{tier}}_features.h5".format(featureType = config.featureType)
     config.imgIdsFilename = "{tier}ImgIds.json"
     config.wordVectorsFile = "./CLEVR_v1/data/glove/glove.6B.{dim}d.txt".format(dim = config.wrdEmbDim) #
 

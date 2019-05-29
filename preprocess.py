@@ -322,7 +322,8 @@ class Preprocesser(object):
             instances = self.readFiles(instancesFilename)
         else:
             with open(datasetFilename, "r") as datasetFile:
-                data = json.load(datasetFile)["questions"]            
+                # data = json.load(datasetFile)["questions"]
+                data = json.load(datasetFile)
             for i in tqdm(range(len(data)), desc = "Preprocessing"):
                 instance = data[i]
 
@@ -404,7 +405,7 @@ class Preprocesser(object):
         if hasTrain:
             dataset["train"] = self.readTier("train" + suffix, train = True)
         dataset["val"] = self.readTier("val" + suffix, train = False)
-        dataset["test"] = self.readTier("test" + suffix, train = False)
+        # dataset["test"] = self.readTier("test" + suffix, train = False)
         
         if hasTrain:
             dataset["evalTrain"] = {}
