@@ -18,7 +18,7 @@ class Config(object):
     datasetFilename = "" # dataset specific
 
     # file names
-    imagesFilename = "{tier}.h5" # Images
+    imagesFilename = "{tier}_features.h5" # Images
     imgsInfoFilename = "{tier}_imgsInfo.json"
     instancesFilename = "{tier}Instances.json"
     # symbols dictionaries
