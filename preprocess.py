@@ -386,7 +386,7 @@ class Preprocesser(object):
         i = 0 
 
         if os.path.exists(instancesFilename):
-            instances = self.readInstacnes(instancesFilename)
+            instances = self.readInstances(instancesFilename)
         else:
             with open(datasetFilename, "r") as datasetFile:               
                 for line in datasetFile:
