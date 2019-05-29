@@ -354,7 +354,7 @@ class Preprocesser(object):
                         "program": program,
                         "programSeq": programSeq,
                         "programInputs": programInputs,
-                        "index": i
+                        "index": instance["index"]
                         })
 
             random.shuffle(instances)
