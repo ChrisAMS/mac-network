@@ -129,6 +129,10 @@ def parseArgs():
     parser.add_argument("--expName",        default = "experiment", type = str,    help = "experiment name") 
 
     # data files
+    parser.add_argument("--weightsPath",     default = "./weights", type = str)
+    parser.add_argument("--logPath",         default = "./results", type = str)
+    parser.add_argument("--configPath",      default = "./results", type = str)
+    parser.add_argument("--predsPath",       default = "./preds", type = str)
     parser.add_argument("--dataset",         default = "CLEVR", choices = ["CLEVR", "NLVR"], type = str) # 
     parser.add_argument("--dataBasedir",     default = "./", type = str,            help = "data base directory") # /jagupard14/scr1/dorarad/
     parser.add_argument("--generatedPrefix", default = "gennew", type = str,           help = "prefix for generated data files") 
