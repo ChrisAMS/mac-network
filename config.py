@@ -166,8 +166,8 @@ def parseArgs():
     parser.add_argument("--test",           action = "store_true",      help = "run testing every epoch and generate predictions file") #
     parser.add_argument("--finalTest",      action = "store_true",      help = "run testing on final epoch")
     parser.add_argument("--retainVal",      action = "store_true",      help = "retain validation order between runs") #     
-    parser.add_argument("--interactive",     action = "store_true") # VQA interactive mode, over test
-    parser.add_argument("--interactiveTier", default = "val", choices = ["train", "val", "test"], type = str) # VQA interactive mode, over test
+    #parser.add_argument("--interactive",     action = "store_true") # VQA interactive mode, over test
+    #parser.add_argument("--interactiveTier", default = "val", choices = ["train", "val", "test"], type = str) # VQA interactive mode, over test
 
     parser.add_argument("--submission",     action = "store_true",      help = "evaluate submission questions")
     parser.add_argument("--getPreds",       action = "store_true",      help = "store prediction")
