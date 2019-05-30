@@ -1,7 +1,6 @@
 --dataset=GQA
 --dataSubset=balanced
 --featureType=gqa_objects
---imageObjects
 --stemNormalize
 --lossType=sigmoid
 --npy
