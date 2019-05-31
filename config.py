@@ -525,7 +525,7 @@ def configGQA():
 
     #config.imagesFilename = "{featureType}.h5".format(featureType = config.featureType)
 
-    config.imgsInfoFilename = "{featureType}_merged_info.json".format(featureType = config.featureType)
+    #config.imgsInfoFilename = "{featureType}_merged_info.json".format(featureType = config.featureType)
 
     if config.subdir != "./":
         config.imagesFilename = "../" + config.imagesFilename
