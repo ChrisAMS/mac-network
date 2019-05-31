@@ -140,7 +140,7 @@ def parseArgs():
     parser.add_argument("--subdir",          default = "./", type = str,            help = "data base directory") 
     parser.add_argument("--generatedPrefix", default = "gen", type = str,           help = "prefix for generated data files") 
     parser.add_argument("--valFilenames",    default = [], nargs = "*", type = str) 
-    parser.add_argument("--featureType",     default = "resnet", type = str,   help = "features type")
+    # parser.add_argument("--featureType",     default = "resnet", type = str,   help = "features type")
     
     parser.add_argument("--imageDims",    default = [100, 2048], nargs = "*", type = int) # [14, 14, 2048]   
     parser.add_argument("--imageObjects", action = "store_true")    
