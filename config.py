@@ -518,7 +518,7 @@ def configNLVR():
 
 def configGQA():
     config.dataPath = "{dataBasedir}/data".format(dataBasedir = config.dataBasedir)
-    config.generatedPrefix += "_{featureType}_".format(featureType = config.featureType)
+    # config.generatedPrefix += "_{featureType}_".format(featureType = config.featureType)
     config.datasetFilename = "{dataSubset}_{{tier}}_data.json".format(dataSubset = config.dataSubset)
     config.wordVectorsFile = "data/glove.6B.{dim}d.txt".format(dim = config.wrdQEmbDim) #
     config.wordVectorsSemanticFile = "data/glove.6B.{dim}d.txt".format(dim = config.semanticWordsEmbDim) #
