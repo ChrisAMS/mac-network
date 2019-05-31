@@ -523,7 +523,7 @@ def configGQA():
     config.wordVectorsFile = "data/glove.6B.{dim}d.txt".format(dim = config.wrdQEmbDim) #
     config.wordVectorsSemanticFile = "data/glove.6B.{dim}d.txt".format(dim = config.semanticWordsEmbDim) #
 
-    config.imagesFilename = "{featureType}.h5".format(featureType = config.featureType)
+    #config.imagesFilename = "{featureType}.h5".format(featureType = config.featureType)
 
     config.imgsInfoFilename = "{featureType}_merged_info.json".format(featureType = config.featureType)
 
